@@ -89,7 +89,7 @@ void main_window_add_message(Tuple *tuple) {
   text_layer_set_background_color(text_layer, background_color);
   text_layer_set_text_color(text_layer, GColorWhite);
   layer_set_frame(text_layer_get_layer(text_layer), (GRect) {
-    .origin = {0, PBL_IF_RECT_ELSE(0, 10)},
+    .origin = {0, 16},
     .size = {bounds.size.w, PBL_IF_RECT_ELSE(bounds.size.h,
                                              bounds.size.h - 20)},
   });
