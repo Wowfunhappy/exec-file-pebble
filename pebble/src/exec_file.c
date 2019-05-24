@@ -3,7 +3,7 @@
 static Window *main_window;
 static TextLayer *text_layer;
 static MenuLayer *menu_layer;
-
+static StatusBarLayer *s_status_bar;
 
 static uint16_t menu_get_num_rows_cb(MenuLayer *menu_layer,
                                      uint16_t section_idx, void *ctx) {
@@ -70,6 +70,8 @@ void main_window_add_menu() {
   });
   menu_layer_set_click_config_onto_window(menu_layer, main_window);
   layer_add_child(window_layer, menu_layer_get_layer(menu_layer));
+    s_status_bar = status_bar_layer_create();
+    layer_add_child(window_layer, status_bar_layer_get_layer(s_status_bar));
 }
 
 void main_window_add_message(Tuple *tuple) {
