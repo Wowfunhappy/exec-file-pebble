@@ -25,6 +25,7 @@ static int16_t menu_get_header_height_cb(MenuLayer *menu_layer,
 static void menu_draw_header_cb(GContext* g_ctx, const Layer *cell_layer,
                                 uint16_t section_idx, void *ctx) {
   menu_cell_basic_header_draw(g_ctx, cell_layer, "Select file to execute");
+  //Note, text gets hidden by status bar!
 }
 #endif
 
@@ -96,6 +97,8 @@ void main_window_add_message(Tuple *tuple) {
 #ifdef PBL_ROUND
   text_layer_enable_screen_text_flow_and_paging(text_layer, 5);
 #endif
+    s_status_bar = status_bar_layer_create();
+    layer_add_child(window_layer, status_bar_layer_get_layer(s_status_bar));
 }
 
 static void main_window_load(Window *main_window) {
