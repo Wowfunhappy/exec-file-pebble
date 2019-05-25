@@ -1,4 +1,8 @@
-# Exec File
+# Exec File - Wowfunhappy mod
+
+Wowfunhappy made some aestetic changes to this app for personal use. The original readme is below:
+
+---
 
 A pebble app that allows you to execute remote files from your pebble. The app 
 needs a companion app, server, to be running on your local network and to be
