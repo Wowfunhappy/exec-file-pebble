@@ -1,6 +1,6 @@
 # Exec File - Wowfunhappy mod
 
-Wowfunhappy made some aestetic changes to this app for personal use. The original readme is below:
+Wowfunhappy made some aesthetic changes to this app for personal use. The original readme is below:
 
 ---
 
