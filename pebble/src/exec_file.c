@@ -25,7 +25,7 @@ static int16_t menu_get_header_height_cb(MenuLayer *menu_layer,
 static void menu_draw_header_cb(GContext* g_ctx, const Layer *cell_layer,
                                 uint16_t section_idx, void *ctx) {
   menu_cell_basic_header_draw(g_ctx, cell_layer, "Select file to execute");
-  //Note, text gets hidden by status bar!
+  //Note, text gets hidden by status bar but I don't care!
 }
 #endif
 
