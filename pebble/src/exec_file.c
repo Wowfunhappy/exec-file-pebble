@@ -88,6 +88,7 @@ void main_window_add_message(Tuple *tuple) {
   text_layer_set_text(text_layer, tuple->value->cstring);
   text_layer_set_background_color(text_layer, background_color);
   text_layer_set_text_color(text_layer, GColorWhite);
+  text_layer_set_font(text_layer, fonts_get_system_font(FONT_KEY_GOTHIC_24_BOLD));
   layer_set_frame(text_layer_get_layer(text_layer), (GRect) {
     .origin = {0, 16},
     .size = {bounds.size.w, PBL_IF_RECT_ELSE(bounds.size.h,
@@ -109,7 +110,7 @@ static void main_window_load(Window *main_window) {
     .size = {bounds.size.w, 20},
   });
 
-  text_layer_set_text(text_layer, "Fetching data...");
+  text_layer_set_text(text_layer, "Loading...");
   text_layer_set_background_color(text_layer, GColorBlack);
   text_layer_set_text_color(text_layer, GColorWhite);
   text_layer_set_text_alignment(text_layer, GTextAlignmentCenter);
