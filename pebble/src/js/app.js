@@ -83,7 +83,8 @@ void function() {
       files.forEach(([name, label]) => Pebble.sendAppMessage({
         filesLengthKey: files.length,
         fileNameKey: name,
-        fileLabelKey: label,
+        /*Cut off initial characters of label, so a number can be placed in front of file name for ordering without it apearing on the watch.*/
+        fileLabelKey: label.substr(5),
       }));
     });
   }
