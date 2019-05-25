@@ -13,7 +13,7 @@ static uint16_t menu_get_num_rows_cb(MenuLayer *menu_layer,
 static void menu_draw_row_cb(GContext* g_ctx, const Layer *cell_layer,
                              MenuIndex *cell_idx, void *ctx) {
   menu_cell_basic_draw(g_ctx, cell_layer, available_files[cell_idx->row][1],
-                       available_files[cell_idx->row][0], NULL);
+                       "", NULL);
 }
 
 #ifdef PBL_RECT
