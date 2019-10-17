@@ -1,6 +1,6 @@
 # Exec File - Wowfunhappy mod
 
-Wowfunhappy made some aesthetic changes to this app for personal use. **YOU MOST LIKELY WANT THE ORIGINAL VERSION, NOT MY FORK.*** The original readme is below:
+Wowfunhappy made some aesthetic changes to this app for personal use. **YOU MOST LIKELY WANT THE ORIGINAL VERSION, NOT MY FORK.** The original readme is below:
 
 ---
 
